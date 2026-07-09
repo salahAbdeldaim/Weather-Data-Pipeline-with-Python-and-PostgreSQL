@@ -94,12 +94,29 @@ graph TD
 
 * **الرابط العام المباشر (`Public URL`)**: `http://72.62.92.93:3000/public/dashboard/ab63c544-c807-47da-a8c9-1490ce34f57b`
 * **المميزات المتاحة للمقيّمين**: استعراض تفاعلي للرسوم البيانية (`X-Ray Visualizations`)، مقارنات درجات الحرارة والرطوبة وسرعة الرياح الحية لـ 260 مدينة ومحافظة مصرية، ومراقبة دورات السحب اليومية مع حماية البيانات عبر صلاحيات القراءة فقط (`PostgreSQL RBAC: team_view`).
-* **📲 باركود المسح السريع بالهاتف (`QR Code`)**: يمكن للمقيّمين وأعضاء اللجنة مسح الباركود أدناه بكاميرا الهاتف للدخول الفوري على لوحة التحليلات الحية بدون أي وسيط أو إعلانات:  
   [![Scan QR Code to Open Live Dashboard](./docs/dashboard/dashboard.png)](http://72.62.92.93:3000/public/dashboard/ab63c544-c807-47da-a8c9-1490ce34f57b)
 
 ---
 
+## 📈 واجهة ذكاء الأعمال المدمجة المفتوحة المصدر (`Open-Source Embedded BI Analytics`)
+
+إيماناً منا بمبدأ **إتاحة البيانات المفتوحة ومشاركة التحليلات البرمجية (`Data Democratization & Open-Source Analytics`)**، يوفر مشروعنا منصة تقارير مدمجة تتيح لأي مطور ويب، باحث جامعي، أو كاتب مقالات استخدام روابط وأكواد تضمين (`iframe / Web Components SDK`) لمؤشرات الطقس الحية مباشرة من سيرفر الإنتاج السحابي:
+
+| المؤشر التحليلي / الرسم البياني | رابط المعاينة العام المباشر | دليل وأكواد التضمين البرمجي (`iframe/SDK`) |
+| :--- | :--- | :--- |
+| 🌡️ **متوسط درجات الحرارة في مصر (`National Temp Average`)** | [🔗 معاينة كارت الـ KPI المباشر](http://72.62.92.93:3000/public/question/359d33dc-ceb9-4be2-a991-8d2f3f41e127) | [📖 دليل التضمين والأكواد](./docs/dashboard/OPEN_BI_KPI_SHOWCASE.md) |
+| 🔥 **أعلى 10 محافظات في درجات الحرارة (`Hottest Provinces`)** | [🔗 معاينة الرسم البياني للمقارنة](http://72.62.92.93:3000/public/question/43b871a4-5d06-440f-972b-d9a0c01d080a) | [📖 دليل التضمين والأكواد](./docs/dashboard/OPEN_BI_KPI_SHOWCASE.md) |
+| 💧 **أعلى 10 محافظات في الرطوبة (`Highest Humidity`)** | [🔗 معاينة الرسم البياني للمقارنة](http://72.62.92.93:3000/public/question/961db986-7cde-4986-92de-48ef9338c2a7) | [📖 دليل التضمين والأكواد](./docs/dashboard/OPEN_BI_KPI_SHOWCASE.md) |
+| 💨 **أعلى 10 محافظات في سرعة الرياح (`Windiest Provinces`)** | [🔗 معاينة الرسم البياني للمقارنة](http://72.62.92.93:3000/public/question/4d8bd792-1e2d-43ab-beb6-5a7e52b21fa5) | [📖 دليل التضمين والأكواد](./docs/dashboard/OPEN_BI_KPI_SHOWCASE.md) |
+| 🗺️ **خريطة التوزيع الجغرافي لقراءات الطقس (`Interactive Map`)** | [🔗 معاينة الخريطة التفاعلية الحية](http://72.62.92.93:3000/public/question/f4244501-1755-4f7d-b608-0ca94df3e95d) | [📖 دليل التضمين والأكواد](./docs/dashboard/OPEN_BI_KPI_SHOWCASE.md) |
+| 📈 **تتبع التغير الزمني للرطوبة والحرارة (`Historical Trend`)** | [🔗 معاينة المخطط الزمني المنحنى](http://72.62.92.93:3000/public/question/04141b10-a90f-46f0-b515-7b3ebdda3596) | [📖 دليل التضمين والأكواد](./docs/dashboard/OPEN_BI_KPI_SHOWCASE.md) |
+
+👉 **[استكشف جميع الـ 13 مؤشر ورابط عام بالإضافة لأكواد الـ iframe & HTML داخل `docs/dashboard/OPEN_BI_KPI_SHOWCASE.md`](./docs/dashboard/OPEN_BI_KPI_SHOWCASE.md)**
+
+---
+
 ## 🚀 دليل التشغيل السريع محلياً (`Quick Start - 3 Steps`)
+
 
 بما أن جميع إعدادات وملفات الدوكر أصبحت منظمة داخل مجلد **[`docker/`](./docker)**، يمكنك تشغيل المنظومة بالكامل على جهازك بضغطة زر أو بأمر واحد:
 

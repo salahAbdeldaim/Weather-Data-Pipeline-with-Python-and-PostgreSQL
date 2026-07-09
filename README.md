@@ -94,12 +94,29 @@ For instant evaluators' review without needing local installation, our complete 
 
 * **Direct Public URL**: `http://72.62.92.93:3000/public/dashboard/ab63c544-c807-47da-a8c9-1490ce34f57b`
 * **Features**: Interactive X-Ray visualizations, real-time temperature anomalies, wind/humidity distribution across 260 Egyptian cities, and automated telemetry tracking powered by read-only `PostgreSQL RBAC (`team_view`)`.
-* **📲 Instant Mobile Scan (`QR Code`)**: Scan the barcode below with your phone camera to open the live dashboard directly without redirects:  
   [![Scan QR Code to Open Live Dashboard](./docs/dashboard/dashboard.png)](http://72.62.92.93:3000/public/dashboard/ab63c544-c807-47da-a8c9-1490ce34f57b)
 
 ---
 
+## 📈 Open-Source Embedded BI Analytics & Public KPI Showcase
+
+As part of our commitment to **Data Democratization and Open-Source Analytics**, developers and researchers can directly embed or consume our live, real-time Egyptian weather KPI cards (`Metabase Public Questions`) without needing database credentials:
+
+| KPI Indicator / Visual Chart | Live Public Card Link | Direct Iframe / SDK Guide |
+| :--- | :--- | :--- |
+| 🌡️ **Average Temperature across Egypt** | [🔗 View KPI Card](http://72.62.92.93:3000/public/question/359d33dc-ceb9-4be2-a991-8d2f3f41e127) | [📖 Embed Guide](./docs/dashboard/OPEN_BI_KPI_SHOWCASE.md) |
+| 🔥 **Top 10 Hottest Provinces** | [🔗 View Ranking Chart](http://72.62.92.93:3000/public/question/43b871a4-5d06-440f-972b-d9a0c01d080a) | [📖 Embed Guide](./docs/dashboard/OPEN_BI_KPI_SHOWCASE.md) |
+| 💧 **Top 10 Highest Humidity Provinces** | [🔗 View Ranking Chart](http://72.62.92.93:3000/public/question/961db986-7cde-4986-92de-48ef9338c2a7) | [📖 Embed Guide](./docs/dashboard/OPEN_BI_KPI_SHOWCASE.md) |
+| 💨 **Top 10 Windiest Provinces** | [🔗 View Ranking Chart](http://72.62.92.93:3000/public/question/4d8bd792-1e2d-43ab-beb6-5a7e52b21fa5) | [📖 Embed Guide](./docs/dashboard/OPEN_BI_KPI_SHOWCASE.md) |
+| 🗺️ **Weather Readings Interactive Map** | [🔗 View Interactive Map](http://72.62.92.93:3000/public/question/f4244501-1755-4f7d-b608-0ca94df3e95d) | [📖 Embed Guide](./docs/dashboard/OPEN_BI_KPI_SHOWCASE.md) |
+| 📈 **Average Humidity Over Time (Trend)** | [🔗 View Trend Chart](http://72.62.92.93:3000/public/question/04141b10-a90f-46f0-b515-7b3ebdda3596) | [📖 Embed Guide](./docs/dashboard/OPEN_BI_KPI_SHOWCASE.md) |
+
+👉 **[Explore all 13 Public Embedded Endpoints & HTML Snippets inside `docs/dashboard/OPEN_BI_KPI_SHOWCASE.md`](./docs/dashboard/OPEN_BI_KPI_SHOWCASE.md)**
+
+---
+
 ## 🚀 Quick Start Guide (Run Locally in 3 Steps)
+
 
 Since all Docker configurations reside cleanly in the **[`docker/`](./docker)** folder, running the entire stack (`PostgreSQL + Python ETL + Metabase BI`) takes just one command:
 
