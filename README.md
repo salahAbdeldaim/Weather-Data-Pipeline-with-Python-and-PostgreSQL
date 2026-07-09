@@ -22,7 +22,7 @@ Click on any folder below to access its specific code, SQL schemas, Docker setup
 
 | Directory | Domain Role | Description | Key Contents |
 | :--- | :--- | :--- | :--- |
-| **[`📁 api/`](./api)** | 🐍 **Data Extraction & Quality** | Python ETL extraction engine that fetches real-time atmospheric telemetry from Open-Meteo API for 71 Egyptian cities with strict **Pydantic Guardrails**. | [`main.py`](./api/main.py), [`extractor.py`](./api/extractor.py), [`loader.py`](./api/loader.py), [`cities.json`](./api/cities.json) |
+| **[`📁 api/`](./api)** | 🐍 **Data Extraction & Quality** | Python ETL extraction engine that fetches real-time atmospheric telemetry from Open-Meteo API across **260 Egyptian cities and governorates** with strict **Pydantic Guardrails**. | [`main.py`](./api/main.py), [`extractor.py`](./api/extractor.py), [`loader.py`](./api/loader.py), [`cities.json`](./api/cities.json) |
 | **[`📁 database/`](./database)** | 🐘 **Database Architecture & SQL** | PostgreSQL relational storage architecture featuring idempotent upserts (`ON CONFLICT DO UPDATE`), analytical queries, and connection guides. | [`schema.sql`](./database/schema.sql), [`queries.sql`](./database/queries.sql), [`README.md`](./database/README.md) |
 | **[`📁 docker/`](./docker)** | 🐳 **DevOps & Containerization** | Complete multi-container Docker ecosystem (`PostgreSQL`, `Python ETL`, `Metabase BI`) with one-click Windows management scripts. | [`docker-compose.yml`](./docker/docker-compose.yml), [`start_services.bat`](./docker/start_services.bat), [`README.md`](./docker/README.md) |
 | **[`📁 n8n/`](./n8n)** | ⚡ **DataOps & Workflow Automation** | Autonomous daily cron workflow exported as JSON (`depi.json`) featuring SSH container execution triggers and instant Telegram Bot (`@wether_app_bot`) alerts. | [`depi.json`](./n8n/depi.json), [`README.md`](./n8n/README.md) |
@@ -35,7 +35,7 @@ Click on any folder below to access its specific code, SQL schemas, Docker setup
 ```mermaid
 graph TD
     subgraph External Sources ["🌐 External Data Sources"]
-        API["Open-Meteo Weather API<br/>(71 Egyptian Cities)"]
+        API["Open-Meteo Weather API<br/>(260 Egyptian Cities & Governorates)"]
     end
 
     subgraph Cloud VPS ["☁️ Hostinger Cloud VPS Infrastructure (Dockerized)"]
@@ -143,11 +143,26 @@ docker compose logs -f weather-etl
 
 | Role | Responsibility | Primary Directory & Code |
 | :--- | :--- | :--- |
-| 🐍 **1. Data Extraction & Quality Engineer** | Built the API ingestion engine (`cities.json`) & strict `Pydantic` schema guardrails. | [`api/`](./api) (`extractor.py`, `main.py`) |
+| 🐍 **1. Data Extraction & Quality Engineer** | Built the API ingestion engine across 260 cities (`cities.json`) & strict `Pydantic` schema guardrails. | [`api/`](./api) (`extractor.py`, `main.py`) |
 | 🐘 **2. Database Architect & Load Engineer** | Designed PostgreSQL schema & idempotent `ON CONFLICT DO UPDATE` transactional loading. | [`database/`](./database) (`schema.sql`, `queries.sql`) |
 | 🐳 **3. DevOps & Cloud Infrastructure Engineer** | Containerized the stack via Docker Compose and managed Hostinger VPS network bridges. | [`docker/`](./docker) (`docker-compose.yml`) |
 | ⚡ **4. DataOps & Automation Engineer** | Configured n8n autonomous daily cron triggers via SSH & Telegram Bot notifications. | [`n8n/`](./n8n) (`depi.json`, `@wether_app_bot`) |
 | 📊 **5. BI Developer & Data Governance Lead** | Built Metabase X-Ray visualizations & provisioned read-only RBAC roles (`team_view`). | [`docker/`](./docker) (`Metabase BI Port 3000`) |
+
+---
+
+## 🌍 Open-Source Extensibility, Interactive Presentation & Future Roadmap
+
+This repository is architected as an **Open-Source, Highly Extensible Data Platform** (`Egypt Weather Open Data & BI API`). We actively encourage developer contributions, third-party web embeds, and community feature expansion:
+
+* **🎬 Interactive Capstone Slide Deck (`Web Presentation`)**: Experience our full keyboard-navigable HTML presentation with live embedded Metabase charts right in your browser: [Launch Capstone Web Presentation (`docs/dashboard/capstone_presentation.html`)](./docs/dashboard/capstone_presentation.html)
+* **📖 Embedded BI Showcase & Developer Guide**: Access all 13 live public KPI question endpoints and iframe/SDK code snippets: [Explore Open-Source KPI Embed Guide (`OPEN_BI_KPI_SHOWCASE.md`)](./docs/dashboard/OPEN_BI_KPI_SHOWCASE.md)
+* **🚀 Upcoming Future Enhancements & Service Expansion (`V2.0 Roadmap`)**:
+  1. **🤖 AI/ML Weather & Temperature Forecasting**: Integrating Python `Scikit-Learn` and `Prophet` time-series prediction models to forecast agricultural heat waves across the Nile Delta 7 days in advance.
+  2. **🌫️ Air Quality Index (`AQI`) & Dust/Pollution Monitoring**: Expanding our Open-Meteo API ingestion engine to extract real-time PM2.5, PM10, and carbon monoxide levels across industrial cities (`Helwan`, `10th of Ramadan`).
+  3. **📲 Automated Farmer & Logistics Alerting System**: Connecting our n8n DataOps layer with `Twilio SMS / WhatsApp API` to dispatch instant frost or extreme heat emergency warnings directly to agricultural cooperatives.
+  4. **🔌 Public REST / GraphQL Weather API**: Provisioning a high-speed FastAPI layer on `Port 8000` to serve unified 260-city JSON telemetry directly to mobile apps and smart city dashboards.
+  5. **🌊 Real-Time Apache Kafka Streaming**: Migrating from batch cron schedules to real-time event-driven ingestion for sub-second telemetry tracking.
 
 ---
 

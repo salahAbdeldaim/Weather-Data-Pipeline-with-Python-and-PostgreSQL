@@ -22,7 +22,7 @@
 
 | المجلد الرئيسي (`Directory`) | الدور ومجال العمل (`Domain Role`) | الوصف (`Description`) | أهم الملفات بداخل المجلد |
 | :--- | :--- | :--- | :--- |
-| **[`📁 api/`](./api)** | 🐍 **استخراج وفحص جودة البيانات** | محرك البايثون (`Python ETL`) المسؤول عن سحب الطقس اللحظي لـ 71 مدينة ومحافظة مصرية من واجهة Open-Meteo مع الفحص الصارم عبر **`Pydantic Guardrails`**. | [`main.py`](./api/main.py)، [`extractor.py`](./api/extractor.py)، [`loader.py`](./api/loader.py)، [`cities.json`](./api/cities.json) |
+| **[`📁 api/`](./api)** | 🐍 **استخراج وفحص جودة البيانات** | محرك البايثون (`Python ETL`) المسؤول عن سحب الطقس اللحظي لـ **260 مدينة ومحافظة مصرية** من واجهة Open-Meteo مع الفحص الصارم عبر **`Pydantic Guardrails`**. | [`main.py`](./api/main.py)، [`extractor.py`](./api/extractor.py)، [`loader.py`](./api/loader.py)، [`cities.json`](./api/cities.json) |
 | **[`📁 database/`](./database)** | 🐘 **قواعد البيانات والاستعلامات** | طبقة التخزين العلائقي `PostgreSQL` وتتضمن تعريف الجداول والفهارس، وآلية الـ `Upsert` لمنع تكرار السجلات (`ON CONFLICT DO UPDATE`)، ودليل الاتصال المباشر من اللاب توب. | [`schema.sql`](./database/schema.sql)، [`queries.sql`](./database/queries.sql)، [`README.md`](./database/README.md) |
 | **[`📁 docker/`](./docker)** | 🐳 **الدوكر والبنية التحتية (`DevOps`)** | منظومة الحاويات الشاملة (`PostgreSQL` + `Python ETL` + `Metabase BI`) المعرّفة في ملف الدوكر الموحد مع سكريبتات ويندوز جاهزة للتشغيل والإيقاف بضغطة زر. | [`docker-compose.yml`](./docker/docker-compose.yml)، [`start_services.bat`](./docker/start_services.bat)، [`README.md`](./docker/README.md) |
 | **[`📁 n8n/`](./n8n)** | ⚡ **الأتمتة وجدولة التشغيل (`DataOps`)** | سير عمل الأتمتة التلقائي المُصدّر بصيغة JSON (`depi.json`) ويشمل تشغيل الحاويات عبر الـ SSH وإرسال التنبيهات اللحظية لبوت تليجرام (`@wether_app_bot`). | [`depi.json`](./n8n/depi.json)، [`README.md`](./n8n/README.md) |
@@ -35,7 +35,7 @@
 ```mermaid
 graph TD
     subgraph External Sources ["🌐 External Data Sources"]
-        API["Open-Meteo Weather API<br/>(71 Egyptian Cities)"]
+        API["Open-Meteo Weather API<br/>(260 Egyptian Cities & Governorates)"]
     end
 
     subgraph Cloud VPS ["☁️ Hostinger Cloud VPS Infrastructure (Dockerized)"]
@@ -143,11 +143,26 @@ docker compose logs -f weather-etl
 
 | الدور والمسمى الوظيفي | المسؤوليات والمخرجات الهندسية | المجلد والأكواد التابعة له |
 | :--- | :--- | :--- |
-| 🐍 **1. مهندس استخراج وفحص جودة البيانات** | بناء محرك جلب الطقس لـ 71 مدينة (`cities.json`) وتطبيق فحص الجودة الصارم عبر `Pydantic Guardrails` لرفض أي قراءة مشوهة. | [`api/`](./api) (`extractor.py`, `main.py`) |
+| 🐍 **1. مهندس استخراج وفحص جودة البيانات** | بناء محرك جلب الطقس لـ **260 مدينة ومحافظة مصرية** (`cities.json`) وتطبيق فحص الجودة الصارم عبر `Pydantic Guardrails` لرفض أي قراءة مشوهة. | [`api/`](./api) (`extractor.py`, `main.py`) |
 | 🐘 **2. مهندس ومصمم قواعد البيانات** | تصميم جداول `PostgreSQL` وتنفيذ محرك التحميل التفاعلي الـ `Upsert` لمنع تكرار البيانات (`ON CONFLICT DO UPDATE`). | [`database/`](./database) (`schema.sql`, `queries.sql`) |
 | 🐳 **3. مهندس البنية التحتية والدوكر (`DevOps`)** | تغليف جميع مكونات المشروع في حاويات دوكر وإدارة منافذ وشبكات السيرفر السحابي (`VPS Firewall`). | [`docker/`](./docker) (`docker-compose.yml`) |
 | ⚡ **4. مهندس الأتمتة والمراقبة (`DataOps`)** | برمجة الجدولة اليومية الآلية باستخدام سحاب `n8n` وبناء بوت التنبيهات على تليجرام (`@wether_app_bot`). | [`n8n/`](./n8n) (`depi.json`، `@wether_app_bot`) |
 | 📊 **5. مطور ذكاء الأعمال وحوكمة البيانات (`BI`)** | إعداد منصة `Metabase` وتصميم اللوحات التفاعلية مع إنشاء صلاحيات القراءة فقط (`RBAC Role: team_view`) لحماية البيانات. | [`docker/`](./docker) (`Metabase BI Port 3000`) |
+
+---
+
+## 🌍 القابلية للتطوير المفتوح المصدر وخارطة الطريق المستقبلية (`Extensibility & Roadmap`)
+
+تم تصميم معمارية هذا المشروع ليكون **منصة بيانات وتقارير مفتوحة المصدر لطقس مصر (`Open-Source Egypt Weather BI Platform`)**، تتيح للباحثين والمطورين الاستفادة المباشرة أو المساهمة البرمجية:
+
+* **🎬 شريحة العرض التفاعلية بالمناقشة (`Interactive Web Presentation`)**: يمكنك استعراض الشرائح السبع التفاعلية المزودة بخرائط وكروت Metabase الحية المدمجة داخل المتصفح والتنقل بأسهم الكيبورد من هنا: [معاينة شرائح العرض التفاعلية (`capstone_presentation.html`)](./docs/dashboard/capstone_presentation.html)
+* **📖 التضمين المجاني للمطورين (`Embedded BI Showcase`)**: استكشف 13 رابط ومؤشر عام وأكواد تضمين `iframe` جاهزة للتركيب بالمواقع بدون كلمة سر: [دليل روابط وأكواد التضمين المفتوح (`OPEN_BI_KPI_SHOWCASE.md`)](./docs/dashboard/OPEN_BI_KPI_SHOWCASE.md)
+* **🚀 خارطة طريق التطوير المستقبلية والمزايا القادمة (`V2.0 Future Expansion`)**:
+  1. **🤖 التنبؤ الذكي بدرجات الحرارة (`AI/ML Forecasting`)**: دمج نماذج تعلم الآلة (`Scikit-Learn & Prophet`) لعمل تنبؤات حية لموجات الصقيع والحرارة على الدلتا والصعيد لمدة 7 أيام قادمة.
+  2. **🌫️ مراقبة جودة الهواء والتلوث (`Air Quality Index - AQI`)**: توسيع بايبلين استخراج البيانات ليشمل قراءات الغبار (`PM2.5 / PM10`) وأول أكسيد الكربون في المدن الصناعية (`حلوان والعاشر من رمضان`).
+  3. **📲 نظام إنذار مبكر للمزارعين وشركات الشحن (`Automated Emergency Alerts`)**: ربط طبقة الـ DataOps (`n8n`) بخدمات الـ SMS و WhatsApp التلقائية لإرسال تحذيرات فورية عند وصول الرياح أو الحرارة لمستويات خطرة.
+  4. **🔌 واجهة برمجية عامة للمطورين (`Public REST / GraphQL API`)**: بناء طبقة `FastAPI` فائقة السرعة على المنفذ `8000` لتقديم بيانات الطقس لـ 260 مدينة بصيغة JSON مباشرة لتطبيقات الهاتف والمدن الذكية.
+  5. **🌊 البث التدفقي اللحظي للبيانات (`Real-Time Kafka Streaming`)**: الانتقال مستقبلاً من نظام الجدولة اليومية إلى استهلاك البيانات التدفقي اللحظي للأحداث الطارئة.
 
 ---
 

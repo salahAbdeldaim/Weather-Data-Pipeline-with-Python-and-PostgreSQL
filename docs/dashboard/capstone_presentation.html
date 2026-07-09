@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEPI Capstone | Egypt Weather Data Pipeline Presentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-gradient: radial-gradient(circle at 50% 10%, #1e293b 0%, #0f172a 100%);
+            --slide-bg: rgba(255, 255, 255, 0.96);
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --accent-blue: #2563eb;
+            --accent-light: #3b82f6;
+            --accent-glow: rgba(59, 130, 246, 0.35);
+            --border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Outfit', sans-serif;
+            user-select: none;
+        }
+
+        body {
+            background: var(--bg-gradient);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+
+        /* Top Presentation Bar */
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2.5rem;
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 100;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #93c5fd;
+        }
+
+        .badge-depi {
+            background: rgba(59, 130, 246, 0.2);
+            color: #60a5fa;
+            padding: 0.35rem 0.85rem;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            border: 1px solid rgba(96, 165, 250, 0.4);
+        }
+
+        .slide-counter {
+            font-weight: 600;
+            color: #cbd5e1;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.35rem 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        /* Slides Container */
+        .slides-wrapper {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem 2.5rem;
+            position: relative;
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+            max-width: 1300px;
+            height: calc(100vh - 160px);
+            background: var(--slide-bg);
+            color: var(--text-primary);
+            border-radius: 24px;
+            padding: 3rem 4rem;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            overflow-y: auto;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .slide.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.98) translateY(15px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        /* Slide Content Typography & Layouts */
+        .slide-tag {
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--accent-blue);
+            letter-spacing: 1.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .slide-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            border-bottom: 3px solid #e2e8f0;
+            padding-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .grid-2col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            flex: 1;
+            align-items: start;
+        }
+
+        .grid-3col {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            flex: 1;
+        }
+
+        .box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 1.5rem;
+            height: 100%;
+        }
+
+        .box-highlight {
+            background: #eff6ff;
+            border: 2px solid #bfdbfe;
+        }
+
+        .box h3 {
+            font-size: 1.3rem;
+            color: var(--accent-blue);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .box p, .box li {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 0.5rem;
+        }
+
+        .box ul {
+            padding-left: 1.25rem;
+        }
+
+        /* Architecture Flow Visual */
+        .arch-flow {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #0f172a;
+            color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 16px;
+            margin-top: 1rem;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .arch-node {
+            background: #1e293b;
+            border: 1px solid #3b82f6;
+            padding: 1rem 1.25rem;
+            border-radius: 12px;
+            text-align: center;
+            flex: 1;
+            min-width: 140px;
+        }
+
+        .arch-node h4 { color: #60a5fa; font-size: 1rem; margin-bottom: 0.25rem; }
+        .arch-node span { font-size: 0.8rem; color: #94a3b8; }
+
+        .arch-arrow { font-size: 1.5rem; color: #60a5fa; }
+
+        /* Embedded BI Card inside Slide */
+        .embed-frame {
+            width: 100%;
+            height: 360px;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            background: #fff;
+        }
+
+        /* Bottom Controls Bar */
+        .bottom-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2.5rem;
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 100;
+        }
+
+        .nav-btn {
+            background: var(--accent-blue);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.75rem;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s ease;
+        }
+
+        .nav-btn:hover:not(:disabled) {
+            background: var(--accent-light);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px var(--accent-glow);
+        }
+
+        .nav-btn:disabled {
+            background: #475569;
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+
+        .hint-text {
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        .qr-showcase {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 16px;
+            border: 2px solid #e2e8f0;
+        }
+
+        .qr-showcase img {
+            width: 180px;
+            height: 180px;
+            border-radius: 12px;
+            border: 4px solid white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="logo-area">
+            <span>🌐 DEPI Graduation Capstone</span>
+            <span class="badge-depi">Microsoft Data Engineer Track</span>
+        </div>
+        <div class="slide-counter" id="slideCounter">Slide 1 of 7</div>
+    </div>
+
+    <!-- Slides Wrapper -->
+    <div class="slides-wrapper">
+
+        <!-- SLIDE 1: Title Slide -->
+        <div class="slide active">
+            <div class="slide-tag">Capstone Project Presentation</div>
+            <h1 class="slide-title" style="font-size: 3.2rem; border-bottom: none; margin-top: 2rem;">
+                🇪🇬 Automated Egypt Weather Data Pipeline & Cloud BI Platform
+            </h1>
+            <p style="font-size: 1.4rem; color: var(--text-secondary); margin-bottom: 3rem;">
+                An Enterprise-Grade, End-to-End Data Engineering Architecture with Idempotent ETL, RBAC Security, DataOps Automation, and Open-Source Analytics.
+            </p>
+            <div class="grid-2col">
+                <div class="box box-highlight">
+                    <h3>🎯 Project Vision & Scope</h3>
+                    <p>Automated extraction, transforming, validation, and analytical presentation of high-resolution atmospheric telemetry across <b>260 Egyptian cities and governorates</b>.</p>
+                </div>
+                <div class="box">
+                    <h3>🛠️ Technology Stack</h3>
+                    <p><b>ETL / Extraction:</b> Python 3.11, Pandas, Pydantic<br>
+                    <b>Storage & RBAC:</b> PostgreSQL 15, SQL Views, Upsert Constraints<br>
+                    <b>DataOps & Alerting:</b> n8n Cloud Automation, Telegram Bot API<br>
+                    <b>BI & Open Data:</b> Metabase X-Ray, Embedded Iframe KPIs</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 2: Problem & Why We Built This -->
+        <div class="slide">
+            <div class="slide-tag">Problem Statement & Motivation</div>
+            <h2 class="slide-title">🧐 Why Did We Build This Platform?</h2>
+            <div class="grid-2col">
+                <div class="box" style="border-color: #fca5a5; background: #fef2f2;">
+                    <h3 style="color: #dc2626;">⚠️ Existing Challenges (`The Problem`)</h3>
+                    <ul>
+                        <li><b>Scattered & Manual Telemetry:</b> Traditional weather data across Egyptian governorates is fragmented, unverified, and requires manual scraping.</li>
+                        <li><b>No Historical Time-Series Tracking:</b> Standard weather APIs only provide instant snapshots, losing vital day-over-day temperature shift trends.</li>
+                        <li><b>Lack of Data Quality Guardrails:</b> Raw external JSON APIs frequently inject corrupt data types, missing coordinates, or extreme null values.</li>
+                        <li><b>Closed Silos:</b> Decision-makers in agriculture, aviation, and logistics lack instant, interactive, publicly embeddable analytical BI endpoints.</li>
+                    </ul>
+                </div>
+                <div class="box box-highlight">
+                    <h3>✅ Our Engineering Solution</h3>
+                    <ul>
+                        <li><b>100% Automated Ingestion:</b> Self-healing ETL pipeline pulling from Open-Meteo API across 260 accurate latitude/longitude coordinates.</li>
+                        <li><b>Dual-Storage Architecture:</b> Preserving full historical time-series (`874+ records`) while serving instantaneous real-time views (`260 exact cities`).</li>
+                        <li><b>Strict Pydantic Guardrails:</b> Every incoming payload undergoes schema validation before hitting the relational database.</li>
+                        <li><b>Open Data Platform:</b> Public UUID question endpoints enabling zero-credential iframe embeds across external portals.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 3: Architecture & 5-Layer Design -->
+        <div class="slide">
+            <div class="slide-tag">System Design & Clean Architecture</div>
+            <h2 class="slide-title">🏗️ 5-Layer Clean Enterprise Architecture</h2>
+            <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 1.25rem;">
+                Our repository strictly adheres to Clean Folder Separation (`Zero Clutter Root`), isolating responsibilities across distinct modular boundaries:
+            </p>
+            <div class="grid-3col" style="margin-bottom: 1.5rem;">
+                <div class="box">
+                    <h3>📁 `api/` (ETL Engine)</h3>
+                    <p>Contains Python extraction (`extractor.py`), transformation (`transformer.py`), and idempotent loading (`loader.py`) scripts governed by Pydantic models.</p>
+                </div>
+                <div class="box">
+                    <h3>📁 `database/` & `docker/`</h3>
+                    <p><b>schema.sql</b> defines table constraints, indexes, and analytical views.<br><b>docker/</b> houses multi-container orchestration (`docker-compose.yml`).</p>
+                </div>
+                <div class="box">
+                    <h3>📁 `n8n/` & `docs/`</h3>
+                    <p><b>n8n/depi.json</b> stores cloud orchestration workflows.<br><b>docs/</b> hosts media, QR codes, and our Open-Source KPI Showcase guides.</p>
+                </div>
+            </div>
+            <!-- Architecture Flow -->
+            <div class="arch-flow">
+                <div class="arch-node"><h4>🌐 Open-Meteo API</h4><span>71 / 260 Egyptian Cities</span></div>
+                <div class="arch-arrow">➔</div>
+                <div class="arch-node"><h4>🐍 Python ETL</h4><span>Pandas & Pydantic Guardrails</span></div>
+                <div class="arch-arrow">➔</div>
+                <div class="arch-node"><h4>🐘 PostgreSQL 15</h4><span>RBAC & Upsert Constraints</span></div>
+                <div class="arch-arrow">➔</div>
+                <div class="arch-node"><h4>⚡ n8n DataOps</h4><span>Daily Cron & Telegram Alert</span></div>
+                <div class="arch-arrow">➔</div>
+                <div class="arch-node"><h4>📊 Metabase BI</h4><span>Public Dashboards & KPIs</span></div>
+            </div>
+        </div>
+
+        <!-- SLIDE 4: Data Quality & Idempotency -->
+        <div class="slide">
+            <div class="slide-tag">Reliability & Data Integrity</div>
+            <h2 class="slide-title">🛡️ Idempotent Upsert & Data Guardrails</h2>
+            <div class="grid-2col">
+                <div class="box box-highlight">
+                    <h3>🔐 Idempotent Upsert (`ON CONFLICT DO UPDATE`)</h3>
+                    <p>Why didn't we just use standard <code>INSERT INTO</code> or truncate the table on every pipeline run?</p>
+                    <ul>
+                        <li><b>Zero Duplication on Retries:</b> In enterprise Data Engineering, pipelines may re-run due to network hiccups. Our table constraint <code>UNIQUE(city, ingestion_time)</code> paired with <code>ON CONFLICT DO UPDATE</code> guarantees exact idempotency.</li>
+                        <li><b>Time-Series Preservation vs Snapshot:</b> Our main table stores cumulative history (`874+ rows`), allowing trend analysis. Meanwhile, our database view <code>view_latest_weather_per_city</code> delivers exact 260-city current snapshots!</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>📐 Pydantic Schema Guardrails</h3>
+                    <p>Before any API payload touches our database cursor, it must pass strict runtime schema enforcement:</p>
+                    <ul>
+                        <li><b>Data Type Safety:</b> Automatic coercion and verification that temperature, humidity, and wind speed are valid floats.</li>
+                        <li><b>Null / Anomaly Rejection:</b> Prevents missing coordinates (`latitude/longitude`) or malformed weather codes from contaminating the analytical schema.</li>
+                        <li><b>Decoupled Transformation:</b> Separates extraction anomalies from load failures, ensuring high pipeline availability.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 5: Automation & DataOps -->
+        <div class="slide">
+            <div class="slide-tag">Orchestration & Observability</div>
+            <h2 class="slide-title">⚡ n8n DataOps Workflow & Telegram Telemetry</h2>
+            <div class="grid-2col">
+                <div class="box">
+                    <h3>⚙️ Why n8n Cloud Orchestration?</h3>
+                    <p>Rather than relying on unmonitored raw crontabs, we engineered a visual, cloud-hosted Directed Acyclic Graph (`DAG`) workflow:</p>
+                    <ul>
+                        <li><b>Daily Cron Trigger:</b> Automatically wakes up and triggers the Docker ETL container execution daily at scheduled UTC windows.</li>
+                        <li><b>Database Health Verification:</b> Executes automated SQL validation queries after extraction to verify row counts and data freshness.</li>
+                        <li><b>Self-Healing Execution:</b> Handles timeout exceptions and logs execution metrics seamlessly.</li>
+                    </ul>
+                </div>
+                <div class="box box-highlight">
+                    <h3>📲 Instant Telegram Telemetry Alerts</h3>
+                    <p>Observability is critical. Upon every pipeline execution, our official bot <b>@wether_app_bot</b> dispatches high-priority notifications:</p>
+                    <div style="background: #ffffff; border-left: 4px solid #10b981; padding: 1rem; border-radius: 8px; margin-top: 0.75rem; font-family: monospace; font-size: 0.9rem; color: #0f172a;">
+                        <b>✅ Weather ETL Pipeline Executed Successfully!</b><br>
+                        • Status: HEALTHY & VERIFIED<br>
+                        • Cities Extracted & Loaded: 260 Egyptian Cities<br>
+                        • Database Table: weather_readings<br>
+                        • Host: Production Cloud VPS (72.62.92.93)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 6: Live Embedded BI Demo -->
+        <div class="slide">
+            <div class="slide-tag">Live Production Showcase</div>
+            <h2 class="slide-title">📈 Live Embedded BI Cards (`Real-Time Cloud VPS`)</h2>
+            <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 1rem;">
+                The iframe below is rendering live, real-time data directly from our production Metabase server on <b>Hostinger Cloud VPS (`72.62.92.93:3000`)</b> via public UUID endpoint:
+            </p>
+            <div class="grid-2col">
+                <div>
+                    <h4 style="color: var(--accent-blue); margin-bottom: 0.5rem;">🌡️ Average Temperature Across Egypt (Live KPI Card)</h4>
+                    <iframe class="embed-frame" src="http://72.62.92.93:3000/public/question/359d33dc-ceb9-4be2-a991-8d2f3f41e127" height="280"></iframe>
+                </div>
+                <div>
+                    <h4 style="color: var(--accent-blue); margin-bottom: 0.5rem;">🔥 Top 10 Hottest Provinces (Live Ranking Chart)</h4>
+                    <iframe class="embed-frame" src="http://72.62.92.93:3000/public/question/43b871a4-5d06-440f-972b-d9a0c01d080a" height="280"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 7: Conclusion & Q&A -->
+        <div class="slide">
+            <div class="slide-tag">Conclusion & Interactive Access</div>
+            <h2 class="slide-title">🎯 Summary & Open-Source BI Democratization</h2>
+            <div class="grid-2col" style="align-items: center;">
+                <div class="box">
+                    <h3>🏆 Key Achievements & Future Roadmap (`V2.0`)</h3>
+                    <ul>
+                        <li><b>End-to-End Automation & Idempotency:</b> Decoupled, containerized, and self-healing ETL across <b>260 Egyptian cities</b> with strict `ON CONFLICT DO UPDATE` upserts.</li>
+                        <li><b>Security (`RBAC`) & Open-Source Democratization:</b> Read-only database roles + 13 live embeddable KPI endpoints for custom developer portals.</li>
+                        <li><b>🚀 Future Scalability & Upcoming Services:</b>
+                            <ul style="padding-left: 1.25rem; margin-top: 0.35rem; color: #475569; font-size: 0.95rem;">
+                                <li>🤖 <b>AI/ML Weather Forecasting:</b> Scikit-Learn & Prophet time-series models for 7-day agricultural prediction.</li>
+                                <li>🌫️ <b>Air Quality Index (`AQI`):</b> PM2.5 & pollution telemetry tracking across industrial cities.</li>
+                                <li>📲 <b>Automated Emergency Alerts:</b> Twilio SMS/WhatsApp warnings dispatched to agricultural cooperatives.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p style="margin-top: 1rem; font-weight: 700; color: var(--accent-blue); font-size: 1.15rem;">
+                        Thank you for your time! We welcome your questions.
+                    </p>
+                </div>
+                <div class="qr-showcase">
+                    <img src="./dashboard.png" alt="Dashboard QR Code" onerror="this.src='https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=http://72.62.92.93:3000/public/dashboard/ab63c544-c807-47da-a8c9-1490ce34f57b'">
+                    <div>
+                        <h3 style="color: var(--text-primary); font-size: 1.4rem; margin-bottom: 0.5rem;">📲 Scan to Test Live!</h3>
+                        <p style="color: var(--text-secondary); font-size: 1rem; line-height: 1.5;">
+                            Scan this QR code right now with your phone camera to open our live Metabase X-Ray dashboard on our production cloud server (`72.62.92.93:3000`).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bottom Controls -->
+    <div class="bottom-bar">
+        <button class="nav-btn" id="prevBtn" onclick="changeSlide(-1)" disabled>
+            ◀ Previous Slide
+        </button>
+        <span class="hint-text">💡 Tip: Use Left ⬅️ and Right ➡️ Arrow Keys on your keyboard to navigate slides</span>
+        <button class="nav-btn" id="nextBtn" onclick="changeSlide(1)">
+            Next Slide ▶
+        </button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const slideCounter = document.getElementById('slideCounter');
+
+        function updateSlideDisplay() {
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active');
+                if (index === currentSlide) {
+                    slide.classList.add('active');
+                }
+            });
+
+            prevBtn.disabled = currentSlide === 0;
+            nextBtn.disabled = currentSlide === slides.length - 1;
+            slideCounter.textContent = `Slide ${currentSlide + 1} of ${slides.length}`;
+        }
+
+        function changeSlide(direction) {
+            const nextIndex = currentSlide + direction;
+            if (nextIndex >= 0 && nextIndex < slides.length) {
+                currentSlide = nextIndex;
+                updateSlideDisplay();
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowRight' || event.key === ' ' || event.key === 'PageDown') {
+                changeSlide(1);
+            } else if (event.key === 'ArrowLeft' || event.key === 'PageUp') {
+                changeSlide(-1);
+            }
+        });
+    </script>
+
+</body>
+</html>
