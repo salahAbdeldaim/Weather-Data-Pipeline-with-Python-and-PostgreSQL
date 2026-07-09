@@ -1,0 +1,72 @@
+province,city,temperature,humidity,wind_speed,weather_code,ingestion_time
+Cairo,Cairo City,27.7,61.0,9.1,0,2026-07-04 23:10:36
+Cairo,New Cairo,26.5,61.0,21.5,0,2026-07-04 23:10:38
+Cairo,Helwan,28.6,55.0,16.0,0,2026-07-04 23:10:39
+Alexandria,Alexandria City,25.8,85.0,10.0,2,2026-07-04 23:10:40
+Alexandria,Borg El Arab,25.5,86.0,13.0,2,2026-07-04 23:10:41
+Alexandria,Abu Qir,25.5,85.0,9.3,1,2026-07-04 23:10:42
+Giza,Giza City,27.7,60.0,10.2,0,2026-07-04 23:10:43
+Giza,6th of October,26.5,63.0,11.0,0,2026-07-04 23:10:44
+Giza,Sheikh Zayed,26.4,65.0,10.6,0,2026-07-04 23:10:45
+Beheira,Damanhour,24.3,92.0,8.1,2,2026-07-04 23:10:46
+Beheira,El Delengat,24.6,89.0,8.4,1,2026-07-04 23:10:47
+Beheira,Kafr El Dawar,24.6,91.0,7.8,2,2026-07-04 23:10:48
+Dakahlia,Mansoura,25.3,82.0,8.9,1,2026-07-04 23:10:49
+Dakahlia,Mit Ghamr,25.5,80.0,9.3,1,2026-07-04 23:10:50
+Dakahlia,Talkha,25.4,82.0,8.9,1,2026-07-04 23:10:51
+Sharqia,Zagazig,26.1,74.0,8.7,0,2026-07-04 23:10:53
+Sharqia,10th of Ramadan,27.4,66.0,16.7,0,2026-07-04 23:10:54
+Sharqia,Belbeis,26.1,73.0,7.2,0,2026-07-04 23:10:56
+Gharbia,Tanta,25.2,83.0,9.3,1,2026-07-04 23:10:58
+Gharbia,Mahalla El Kubra,24.9,85.0,9.0,1,2026-07-04 23:10:59
+Gharbia,Zifta,25.5,80.0,8.7,1,2026-07-04 23:11:00
+Monufia,Shibin El Kom,25.3,78.0,8.1,1,2026-07-04 23:11:01
+Monufia,Menouf,25.4,75.0,7.9,0,2026-07-04 23:11:02
+Monufia,Ashmoun,25.6,73.0,7.8,0,2026-07-04 23:11:03
+Qalyubia,Banha,25.9,73.0,8.4,0,2026-07-04 23:11:04
+Qalyubia,Shubra El Kheima,27.1,64.0,8.6,0,2026-07-04 23:11:05
+Qalyubia,Obour,26.7,68.0,13.0,0,2026-07-04 23:11:06
+Kafr El Sheikh,Kafr El Sheikh City,24.6,88.0,8.9,1,2026-07-04 23:11:08
+Kafr El Sheikh,Desouk,24.6,91.0,8.1,1,2026-07-04 23:11:09
+Kafr El Sheikh,Baltim,26.3,80.0,17.4,1,2026-07-04 23:11:10
+Damietta,Damietta City,26.2,80.0,14.9,2,2026-07-04 23:11:11
+Damietta,Ras El Bar,26.4,80.0,14.9,2,2026-07-04 23:11:12
+Damietta,New Damietta,26.5,80.0,18.7,2,2026-07-04 23:11:13
+Port Said,Port Said City,26.9,79.0,18.0,2,2026-07-04 23:11:14
+Port Said,Port Fouad,26.9,79.0,18.0,2,2026-07-04 23:11:15
+Ismailia,Ismailia City,27.6,67.0,14.5,0,2026-07-04 23:11:16
+Ismailia,Fayid,28.8,57.0,20.3,0,2026-07-04 23:11:17
+Suez,Suez City,30.7,48.0,15.0,0,2026-07-04 23:11:18
+Suez,Ain Sokhna,29.7,49.0,16.1,0,2026-07-04 23:11:19
+Faiyum,Faiyum City,30.5,43.0,15.4,0,2026-07-04 23:11:20
+Faiyum,Sinnuris,30.6,43.0,14.5,0,2026-07-04 23:11:21
+Beni Suef,Beni Suef City,31.7,37.0,18.0,0,2026-07-04 23:11:22
+Beni Suef, الواسطى,31.6,39.0,15.8,0,2026-07-04 23:11:23
+Minya,Minya City,32.6,31.0,11.4,0,2026-07-04 23:11:24
+Minya,Mallawi,33.0,30.0,11.7,0,2026-07-04 23:11:25
+Minya,Beni Mazar,32.5,35.0,18.9,0,2026-07-04 23:11:26
+Assiut,Assiut City,33.2,29.0,12.7,0,2026-07-04 23:11:27
+Assiut,Abnoub,32.9,29.0,13.7,0,2026-07-04 23:11:28
+Sohag,Sohag City,32.8,26.0,10.4,0,2026-07-04 23:11:29
+Sohag,Tahta,33.1,28.0,13.3,0,2026-07-04 23:11:30
+Qena,Qena City,33.7,21.0,10.2,0,2026-07-04 23:11:31
+Qena,Nag Hammadi,33.0,22.0,12.0,0,2026-07-04 23:11:32
+Luxor,Luxor City,34.6,20.0,13.4,0,2026-07-04 23:11:33
+Luxor,Esna,34.6,20.0,14.6,0,2026-07-04 23:11:34
+Aswan,Aswan City,35.9,16.0,18.1,0,2026-07-04 23:11:35
+Aswan,Edfu,34.8,19.0,11.3,0,2026-07-04 23:11:36
+Aswan,Kom Ombo,35.3,17.0,10.4,0,2026-07-04 23:11:37
+Matrouh,Marsa Matrouh,25.6,83.0,11.9,1,2026-07-04 23:11:38
+Matrouh,El Alamein,25.6,83.0,13.6,2,2026-07-04 23:11:39
+Matrouh,Siwa,33.6,26.0,18.6,0,2026-07-04 23:11:40
+Red Sea,Hurghada,31.8,27.0,13.1,0,2026-07-04 23:11:41
+Red Sea,Safaga,33.5,17.0,20.9,0,2026-07-04 23:11:42
+Red Sea,Marsa Alam,31.6,29.0,10.4,0,2026-07-04 23:11:43
+New Valley,Kharga,33.1,24.0,13.7,0,2026-07-04 23:11:44
+New Valley,Dakhla,32.9,21.0,8.3,0,2026-07-04 23:11:45
+New Valley,Farafra,32.9,26.0,11.9,0,2026-07-04 23:11:46
+North Sinai,Arish,27.1,77.0,12.6,2,2026-07-04 23:11:48
+North Sinai,Bir al-Abed,27.2,78.0,13.6,2,2026-07-04 23:11:49
+South Sinai,Sharm El Sheikh,33.5,22.0,11.8,0,2026-07-04 23:11:50
+South Sinai,Dahab,34.5,24.0,16.0,0,2026-07-04 23:11:51
+South Sinai,Saint Catherine,20.7,40.0,6.8,0,2026-07-04 23:11:52

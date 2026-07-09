@@ -1,0 +1,66 @@
+version: '3.8'
+
+services:
+  # 1. PostgreSQL Database Service
+  # خدمة قاعدة بيانات PostgreSQL لتخزين قراءات الطقس
+  postgres:
+    image: postgres:15-alpine
+    container_name: weather_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: ${DB_USER:-weather_user}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-weather_pass_2026}
+      POSTGRES_DB: ${DB_NAME:-weather_db}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ../database/schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-weather_user} -d ${DB_NAME:-weather_db}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # 2. Weather ETL Pipeline Service (Python)
+  # خدمة بايبلين استخراج وتحميل بيانات الطقس (Python ETL)
+  weather-etl:
+    build:
+      context: ../api
+      dockerfile: Dockerfile
+    container_name: weather_etl_pipeline
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: ${DB_NAME:-weather_db}
+      DB_USER: ${DB_USER:-weather_user}
+      DB_PASSWORD: ${DB_PASSWORD:-weather_pass_2026}
+    restart: "no" # Runs once to extract from Open-Meteo API and load into PostgreSQL
+
+  # 3. Metabase BI Dashboard Service
+  # خدمة لوحات البيانات التحليلية التفاعلية (Metabase BI)
+  metabase:
+    image: metabase/metabase:latest
+    container_name: weather_metabase_bi
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      MB_DB_TYPE: postgres
+      MB_DB_DBNAME: ${DB_NAME:-weather_db}
+      MB_DB_PORT: 5432
+      MB_DB_USER: ${DB_USER:-weather_user}
+      MB_DB_PASS: ${DB_PASSWORD:-weather_pass_2026}
+      MB_DB_HOST: postgres
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - metabase_data:/metabase-data
+
+volumes:
+  postgres_data:
+  metabase_data:

@@ -1,0 +1,1610 @@
+[
+  {
+    "province": "Cairo",
+    "city": "Cairo City",
+    "lat": 30.0444,
+    "lon": 31.2357
+  },
+  {
+    "province": "Cairo",
+    "city": "New Cairo",
+    "lat": 30.0298,
+    "lon": 31.4933
+  },
+  {
+    "province": "Cairo",
+    "city": "Helwan",
+    "lat": 29.8448,
+    "lon": 31.2961
+  },
+  {
+    "province": "Alexandria",
+    "city": "Alexandria City",
+    "lat": 31.2001,
+    "lon": 29.9187
+  },
+  {
+    "province": "Alexandria",
+    "city": "Borg El Arab",
+    "lat": 30.9083,
+    "lon": 29.6639
+  },
+  {
+    "province": "Alexandria",
+    "city": "Abu Qir",
+    "lat": 31.3217,
+    "lon": 30.065
+  },
+  {
+    "province": "Giza",
+    "city": "Giza City",
+    "lat": 30.0131,
+    "lon": 31.2089
+  },
+  {
+    "province": "Giza",
+    "city": "6th of October",
+    "lat": 29.9737,
+    "lon": 30.9269
+  },
+  {
+    "province": "Giza",
+    "city": "Sheikh Zayed",
+    "lat": 30.0197,
+    "lon": 30.9737
+  },
+  {
+    "province": "Beheira",
+    "city": "Damanhour",
+    "lat": 31.0361,
+    "lon": 30.4695
+  },
+  {
+    "province": "Beheira",
+    "city": "El Delengat",
+    "lat": 30.8248,
+    "lon": 30.5348
+  },
+  {
+    "province": "Beheira",
+    "city": "Kafr El Dawar",
+    "lat": 31.1308,
+    "lon": 30.1286
+  },
+  {
+    "province": "Dakahlia",
+    "city": "Mansoura",
+    "lat": 31.0409,
+    "lon": 31.3785
+  },
+  {
+    "province": "Dakahlia",
+    "city": "Mit Ghamr",
+    "lat": 30.7192,
+    "lon": 31.2625
+  },
+  {
+    "province": "Dakahlia",
+    "city": "Talkha",
+    "lat": 31.0544,
+    "lon": 31.3822
+  },
+  {
+    "province": "Sharqia",
+    "city": "Zagazig",
+    "lat": 30.5877,
+    "lon": 31.502
+  },
+  {
+    "province": "Sharqia",
+    "city": "10th of Ramadan",
+    "lat": 30.3071,
+    "lon": 31.7428
+  },
+  {
+    "province": "Sharqia",
+    "city": "Belbeis",
+    "lat": 30.4206,
+    "lon": 31.5647
+  },
+  {
+    "province": "Gharbia",
+    "city": "Tanta",
+    "lat": 30.7865,
+    "lon": 31.0004
+  },
+  {
+    "province": "Gharbia",
+    "city": "Mahalla El Kubra",
+    "lat": 30.9706,
+    "lon": 31.1649
+  },
+  {
+    "province": "Gharbia",
+    "city": "Zifta",
+    "lat": 30.7128,
+    "lon": 31.2417
+  },
+  {
+    "province": "Monufia",
+    "city": "Shibin El Kom",
+    "lat": 30.5622,
+    "lon": 31.0109
+  },
+  {
+    "province": "Monufia",
+    "city": "Menouf",
+    "lat": 30.4667,
+    "lon": 30.9333
+  },
+  {
+    "province": "Monufia",
+    "city": "Ashmoun",
+    "lat": 30.3,
+    "lon": 30.9833
+  },
+  {
+    "province": "Qalyubia",
+    "city": "Banha",
+    "lat": 30.4601,
+    "lon": 31.1761
+  },
+  {
+    "province": "Qalyubia",
+    "city": "Shubra El Kheima",
+    "lat": 30.1286,
+    "lon": 31.2422
+  },
+  {
+    "province": "Qalyubia",
+    "city": "Obour",
+    "lat": 30.2372,
+    "lon": 31.4744
+  },
+  {
+    "province": "Kafr El Sheikh",
+    "city": "Kafr El Sheikh City",
+    "lat": 31.1107,
+    "lon": 30.9388
+  },
+  {
+    "province": "Kafr El Sheikh",
+    "city": "Desouk",
+    "lat": 31.1306,
+    "lon": 30.6472
+  },
+  {
+    "province": "Kafr El Sheikh",
+    "city": "Baltim",
+    "lat": 31.5583,
+    "lon": 31.0833
+  },
+  {
+    "province": "Damietta",
+    "city": "Damietta City",
+    "lat": 31.4175,
+    "lon": 31.8144
+  },
+  {
+    "province": "Damietta",
+    "city": "Ras El Bar",
+    "lat": 31.5139,
+    "lon": 31.8167
+  },
+  {
+    "province": "Damietta",
+    "city": "New Damietta",
+    "lat": 31.4333,
+    "lon": 31.6667
+  },
+  {
+    "province": "Port Said",
+    "city": "Port Said City",
+    "lat": 31.2565,
+    "lon": 32.2841
+  },
+  {
+    "province": "Port Said",
+    "city": "Port Fouad",
+    "lat": 31.2444,
+    "lon": 32.3167
+  },
+  {
+    "province": "Ismailia",
+    "city": "Ismailia City",
+    "lat": 30.6043,
+    "lon": 32.2723
+  },
+  {
+    "province": "Ismailia",
+    "city": "Fayid",
+    "lat": 30.3275,
+    "lon": 32.3086
+  },
+  {
+    "province": "Suez",
+    "city": "Suez City",
+    "lat": 29.9668,
+    "lon": 32.5498
+  },
+  {
+    "province": "Suez",
+    "city": "Ain Sokhna",
+    "lat": 29.5786,
+    "lon": 32.3422
+  },
+  {
+    "province": "Faiyum",
+    "city": "Faiyum City",
+    "lat": 29.3094,
+    "lon": 30.8418
+  },
+  {
+    "province": "Faiyum",
+    "city": "Sinnuris",
+    "lat": 29.4167,
+    "lon": 30.8667
+  },
+  {
+    "province": "Beni Suef",
+    "city": "Beni Suef City",
+    "lat": 29.0744,
+    "lon": 31.0978
+  },
+  {
+    "province": "Beni Suef",
+    "city": "Al Wasta",
+    "lat": 29.3367,
+    "lon": 31.2067
+  },
+  {
+    "province": "Minya",
+    "city": "Minya City",
+    "lat": 28.0991,
+    "lon": 30.7503
+  },
+  {
+    "province": "Minya",
+    "city": "Mallawi",
+    "lat": 27.7314,
+    "lon": 30.8425
+  },
+  {
+    "province": "Minya",
+    "city": "Beni Mazar",
+    "lat": 28.5,
+    "lon": 30.8
+  },
+  {
+    "province": "Assiut",
+    "city": "Assiut City",
+    "lat": 27.181,
+    "lon": 31.1837
+  },
+  {
+    "province": "Assiut",
+    "city": "Abnoub",
+    "lat": 27.2667,
+    "lon": 31.15
+  },
+  {
+    "province": "Sohag",
+    "city": "Sohag City",
+    "lat": 26.557,
+    "lon": 31.6948
+  },
+  {
+    "province": "Sohag",
+    "city": "Tahta",
+    "lat": 26.7667,
+    "lon": 31.5
+  },
+  {
+    "province": "Qena",
+    "city": "Qena City",
+    "lat": 26.1615,
+    "lon": 32.7181
+  },
+  {
+    "province": "Qena",
+    "city": "Nag Hammadi",
+    "lat": 26.05,
+    "lon": 32.2411
+  },
+  {
+    "province": "Luxor",
+    "city": "Luxor City",
+    "lat": 25.6872,
+    "lon": 32.6396
+  },
+  {
+    "province": "Luxor",
+    "city": "Esna",
+    "lat": 25.2933,
+    "lon": 32.5539
+  },
+  {
+    "province": "Aswan",
+    "city": "Aswan City",
+    "lat": 24.0889,
+    "lon": 32.8998
+  },
+  {
+    "province": "Aswan",
+    "city": "Edfu",
+    "lat": 24.9781,
+    "lon": 32.8753
+  },
+  {
+    "province": "Aswan",
+    "city": "Kom Ombo",
+    "lat": 24.4756,
+    "lon": 32.9464
+  },
+  {
+    "province": "Matrouh",
+    "city": "Marsa Matrouh",
+    "lat": 31.3543,
+    "lon": 27.2373
+  },
+  {
+    "province": "Matrouh",
+    "city": "El Alamein",
+    "lat": 30.8206,
+    "lon": 28.9553
+  },
+  {
+    "province": "Matrouh",
+    "city": "Siwa",
+    "lat": 29.2033,
+    "lon": 25.5186
+  },
+  {
+    "province": "Red Sea",
+    "city": "Hurghada",
+    "lat": 27.2579,
+    "lon": 33.8116
+  },
+  {
+    "province": "Red Sea",
+    "city": "Safaga",
+    "lat": 26.746,
+    "lon": 33.936
+  },
+  {
+    "province": "Red Sea",
+    "city": "Marsa Alam",
+    "lat": 25.0672,
+    "lon": 34.8906
+  },
+  {
+    "province": "New Valley",
+    "city": "Kharga",
+    "lat": 25.439,
+    "lon": 30.5586
+  },
+  {
+    "province": "New Valley",
+    "city": "Dakhla",
+    "lat": 25.5,
+    "lon": 29.1667
+  },
+  {
+    "province": "New Valley",
+    "city": "Farafra",
+    "lat": 27.0583,
+    "lon": 27.9717
+  },
+  {
+    "province": "North Sinai",
+    "city": "Arish",
+    "lat": 31.1321,
+    "lon": 33.8033
+  },
+  {
+    "province": "North Sinai",
+    "city": "Bir al-Abed",
+    "lat": 31.0,
+    "lon": 33.0
+  },
+  {
+    "province": "South Sinai",
+    "city": "Sharm El Sheikh",
+    "lat": 27.9158,
+    "lon": 34.3299
+  },
+  {
+    "province": "South Sinai",
+    "city": "Dahab",
+    "lat": 28.5083,
+    "lon": 34.5161
+  },
+  {
+    "province": "South Sinai",
+    "city": "Saint Catherine",
+    "lat": 28.5564,
+    "lon": 33.9513
+  },
+  {
+    "province": "Al Qāhirah",
+    "city": "Cairo",
+    "lat": 30.0444,
+    "lon": 31.2358
+  },
+  {
+    "province": "Al Iskandarīyah",
+    "city": "Alexandria",
+    "lat": 31.1975,
+    "lon": 29.8925
+  },
+  {
+    "province": "Al Jīzah",
+    "city": "Giza",
+    "lat": 29.987,
+    "lon": 31.2118
+  },
+  {
+    "province": "Al Qalyūbīyah",
+    "city": "Shubra al Khaymah",
+    "lat": 30.1286,
+    "lon": 31.2422
+  },
+  {
+    "province": "Būr Sa‘īd",
+    "city": "Port Said",
+    "lat": 31.2625,
+    "lon": 32.3061
+  },
+  {
+    "province": "As Suways",
+    "city": "Suez",
+    "lat": 29.9667,
+    "lon": 32.5333
+  },
+  {
+    "province": "Asyūţ",
+    "city": "Dayrut",
+    "lat": 27.5667,
+    "lon": 30.8167
+  },
+  {
+    "province": "Ad Daqahlīyah",
+    "city": "Al Mansurah",
+    "lat": 31.05,
+    "lon": 31.3833
+  },
+  {
+    "province": "Al Qāhirah",
+    "city": "Halwan",
+    "lat": 29.8493,
+    "lon": 31.3327
+  },
+  {
+    "province": "Al Gharbīyah",
+    "city": "Al Mahallah al Kubra",
+    "lat": 30.9667,
+    "lon": 31.1667
+  },
+  {
+    "province": "Asyūţ",
+    "city": "Manfalut",
+    "lat": 27.3128,
+    "lon": 30.9703
+  },
+  {
+    "province": "Al Qalyūbīyah",
+    "city": "Shibin al Qanatir",
+    "lat": 30.3127,
+    "lon": 31.3202
+  },
+  {
+    "province": "Asyūţ",
+    "city": "Asyut",
+    "lat": 27.1869,
+    "lon": 31.1714
+  },
+  {
+    "province": "Al Fayyūm",
+    "city": "Al Fayyum",
+    "lat": 29.3,
+    "lon": 30.8333
+  },
+  {
+    "province": "Aswān",
+    "city": "Idfu",
+    "lat": 24.9781,
+    "lon": 32.8789
+  },
+  {
+    "province": "Qinā",
+    "city": "Isna",
+    "lat": 25.2933,
+    "lon": 32.5564
+  },
+  {
+    "province": "Qinā",
+    "city": "Dishna",
+    "lat": 26.1225,
+    "lon": 32.4711
+  },
+  {
+    "province": "Al Jīzah",
+    "city": "Awsim",
+    "lat": 30.1222,
+    "lon": 31.1333
+  },
+  {
+    "province": "Al Ismā‘īlīyah",
+    "city": "Ismailia",
+    "lat": 30.5833,
+    "lon": 32.2667
+  },
+  {
+    "province": "Al Minūfīyah",
+    "city": "Tala",
+    "lat": 30.6801,
+    "lon": 30.9438
+  },
+  {
+    "province": "Al Gharbīyah",
+    "city": "Samannud",
+    "lat": 30.9622,
+    "lon": 31.2425
+  },
+  {
+    "province": "Aswān",
+    "city": "Kawm Umbu",
+    "lat": 24.4667,
+    "lon": 32.95
+  },
+  {
+    "province": "Aswān",
+    "city": "Aswan",
+    "lat": 24.0889,
+    "lon": 32.8997
+  },
+  {
+    "province": "Ad Daqahlīyah",
+    "city": "Dikirnis",
+    "lat": 31.0833,
+    "lon": 31.6
+  },
+  {
+    "province": "Al Jīzah",
+    "city": "Madinat as Sadis min Uktubar",
+    "lat": 29.9361,
+    "lon": 30.9269
+  },
+  {
+    "province": "Al Minūfīyah",
+    "city": "Ash Shuhada'",
+    "lat": 31.0833,
+    "lon": 30.7333
+  },
+  {
+    "province": "Al Buḩayrah",
+    "city": "Damanhur",
+    "lat": 31.05,
+    "lon": 30.4667
+  },
+  {
+    "province": "Al Gharbīyah",
+    "city": "Basyun",
+    "lat": 30.9364,
+    "lon": 30.8111
+  },
+  {
+    "province": "Ash Sharqīyah",
+    "city": "Az Zaqaziq",
+    "lat": 30.5667,
+    "lon": 31.5
+  },
+  {
+    "province": "Banī Suwayf",
+    "city": "Bani Suwayf",
+    "lat": 29.0667,
+    "lon": 31.0833
+  },
+  {
+    "province": "Kafr ash Shaykh",
+    "city": "Qillin",
+    "lat": 31.0464,
+    "lon": 30.8546
+  },
+  {
+    "province": "Al Minūfīyah",
+    "city": "Shibin al Kawm",
+    "lat": 30.55,
+    "lon": 31.0
+  },
+  {
+    "province": "Ash Sharqīyah",
+    "city": "Al `Ashir min Ramadan",
+    "lat": 30.2964,
+    "lon": 31.7463
+  },
+  {
+    "province": "Qinā",
+    "city": "Qina",
+    "lat": 26.1667,
+    "lon": 32.7167
+  },
+  {
+    "province": "Al Minyā",
+    "city": "Al Minya",
+    "lat": 28.0833,
+    "lon": 30.75
+  },
+  {
+    "province": "Sūhāj",
+    "city": "Saqultah",
+    "lat": 26.65,
+    "lon": 31.6667
+  },
+  {
+    "province": "Al Baḩr al Aḩmar",
+    "city": "Al Ghardaqah",
+    "lat": 27.2578,
+    "lon": 33.8117
+  },
+  {
+    "province": "Al Minūfīyah",
+    "city": "Munuf",
+    "lat": 30.4667,
+    "lon": 30.9333
+  },
+  {
+    "province": "Qinā",
+    "city": "Farshut",
+    "lat": 26.055,
+    "lon": 32.1633
+  },
+  {
+    "province": "Dumyāţ",
+    "city": "Damietta",
+    "lat": 31.4167,
+    "lon": 31.8214
+  },
+  {
+    "province": "Al Uqşur",
+    "city": "Luxor",
+    "lat": 25.6967,
+    "lon": 32.6444
+  },
+  {
+    "province": "Ad Daqahlīyah",
+    "city": "Timayy al Imdid",
+    "lat": 30.9099,
+    "lon": 31.5343
+  },
+  {
+    "province": "Asyūţ",
+    "city": "Sidfa",
+    "lat": 29.9222,
+    "lon": 31.1747
+  },
+  {
+    "province": "Ash Sharqīyah",
+    "city": "Bilbays",
+    "lat": 30.4167,
+    "lon": 31.5667
+  },
+  {
+    "province": "Sūhāj",
+    "city": "Suhaj",
+    "lat": 26.5606,
+    "lon": 31.6917
+  },
+  {
+    "province": "Shamāl Sīnā’",
+    "city": "Al `Arish",
+    "lat": 31.1287,
+    "lon": 33.7971
+  },
+  {
+    "province": "Ash Sharqīyah",
+    "city": "Abu Kabir",
+    "lat": 30.7167,
+    "lon": 31.6667
+  },
+  {
+    "province": "Ad Daqahlīyah",
+    "city": "Al Matariyah",
+    "lat": 31.1833,
+    "lon": 32.0333
+  },
+  {
+    "province": "Al Jīzah",
+    "city": "Al Hawamidiyah",
+    "lat": 29.8972,
+    "lon": 31.2742
+  },
+  {
+    "province": "Sūhāj",
+    "city": "Akhmim",
+    "lat": 26.5667,
+    "lon": 31.75
+  },
+  {
+    "province": "Sūhāj",
+    "city": "Jirja",
+    "lat": 26.3383,
+    "lon": 31.8917
+  },
+  {
+    "province": "Qinā",
+    "city": "Qift",
+    "lat": 26.0,
+    "lon": 32.8167
+  },
+  {
+    "province": "Al Qalyūbīyah",
+    "city": "Qalyub",
+    "lat": 30.1997,
+    "lon": 31.2053
+  },
+  {
+    "province": "Kafr ash Shaykh",
+    "city": "Kafr ash Shaykh",
+    "lat": 31.1143,
+    "lon": 30.9401
+  },
+  {
+    "province": "Kafr ash Shaykh",
+    "city": "Disuq",
+    "lat": 31.1325,
+    "lon": 30.6478
+  },
+  {
+    "province": "Al Buḩayrah",
+    "city": "Rosetta",
+    "lat": 31.4014,
+    "lon": 30.4194
+  },
+  {
+    "province": "Ash Sharqīyah",
+    "city": "Faqus",
+    "lat": 30.7333,
+    "lon": 31.8
+  },
+  {
+    "province": "Maţrūḩ",
+    "city": "Matruh",
+    "lat": 31.3333,
+    "lon": 27.2333
+  },
+  {
+    "province": "Al Buḩayrah",
+    "city": "Idku",
+    "lat": 31.3058,
+    "lon": 30.2956
+  },
+  {
+    "province": "Al Buḩayrah",
+    "city": "Kafr ad Dawwar",
+    "lat": 31.1339,
+    "lon": 30.1297
+  },
+  {
+    "province": "Al Jīzah",
+    "city": "Saft al Laban",
+    "lat": 30.0323,
+    "lon": 31.1709
+  },
+  {
+    "province": "Ad Daqahlīyah",
+    "city": "Al Jammaliyah",
+    "lat": 31.1808,
+    "lon": 31.8653
+  },
+  {
+    "province": "Ash Sharqīyah",
+    "city": "Al Qurayn",
+    "lat": 30.6161,
+    "lon": 31.735
+  },
+  {
+    "province": "Al Baḩr al Aḩmar",
+    "city": "Ra's Gharib",
+    "lat": 28.3597,
+    "lon": 33.0775
+  },
+  {
+    "province": "Sūhāj",
+    "city": "Al Minshah",
+    "lat": 26.4769,
+    "lon": 31.8036
+  },
+  {
+    "province": "Al Jīzah",
+    "city": "Al Badrashayn",
+    "lat": 29.8514,
+    "lon": 31.2742
+  },
+  {
+    "province": "Al Minyā",
+    "city": "Samalut",
+    "lat": 28.3122,
+    "lon": 30.71
+  },
+  {
+    "province": "Kafr ash Shaykh",
+    "city": "Biyala",
+    "lat": 31.1742,
+    "lon": 31.2217
+  },
+  {
+    "province": "Al Gharbīyah",
+    "city": "Kafr az Zayyat",
+    "lat": 30.8197,
+    "lon": 30.8242
+  },
+  {
+    "province": "Al Fayyūm",
+    "city": "Ibshaway",
+    "lat": 29.3581,
+    "lon": 30.6814
+  },
+  {
+    "province": "Al Qalyūbīyah",
+    "city": "Al Qanatir al Khayriyah",
+    "lat": 30.1933,
+    "lon": 31.1369
+  },
+  {
+    "province": "Al Minūfīyah",
+    "city": "Ashmun",
+    "lat": 30.3,
+    "lon": 30.9833
+  },
+  {
+    "province": "Būr Sa‘īd",
+    "city": "Bur Fu'ad",
+    "lat": 31.2314,
+    "lon": 32.3253
+  },
+  {
+    "province": "Al Minyā",
+    "city": "Bani Mazar",
+    "lat": 28.5036,
+    "lon": 30.8003
+  },
+  {
+    "province": "Al Buḩayrah",
+    "city": "Madinat as Sadat",
+    "lat": 30.4182,
+    "lon": 30.5747
+  },
+  {
+    "province": "Al Qalyūbīyah",
+    "city": "Al Khankah",
+    "lat": 30.1601,
+    "lon": 31.3133
+  },
+  {
+    "province": "Al Jīzah",
+    "city": "Kirdasah",
+    "lat": 30.0311,
+    "lon": 31.1111
+  },
+  {
+    "province": "Qinā",
+    "city": "Armant",
+    "lat": 25.6167,
+    "lon": 32.5333
+  },
+  {
+    "province": "Al Minyā",
+    "city": "Maghaghah",
+    "lat": 28.6483,
+    "lon": 30.8422
+  },
+  {
+    "province": "Asyūţ",
+    "city": "Al Ghanayim",
+    "lat": 26.8747,
+    "lon": 31.3292
+  },
+  {
+    "province": "Janūb Sīnā’",
+    "city": "Sharm ash Shaykh",
+    "lat": 27.8519,
+    "lon": 34.305
+  },
+  {
+    "province": "Al Buḩayrah",
+    "city": "Ad Dilinjat",
+    "lat": 30.8278,
+    "lon": 30.5364
+  },
+  {
+    "province": "Asyūţ",
+    "city": "Abu Tij",
+    "lat": 27.0442,
+    "lon": 31.3189
+  },
+  {
+    "province": "Dumyāţ",
+    "city": "`Izbat al Burj",
+    "lat": 31.5031,
+    "lon": 31.8411
+  },
+  {
+    "province": "Asyūţ",
+    "city": "Al Qusiyah",
+    "lat": 27.4444,
+    "lon": 30.8167
+  },
+  {
+    "province": "Al Buḩayrah",
+    "city": "Abu al Matamir",
+    "lat": 30.9103,
+    "lon": 30.1744
+  },
+  {
+    "province": "Asyūţ",
+    "city": "Abnub",
+    "lat": 27.2667,
+    "lon": 31.15
+  },
+  {
+    "province": "Ash Sharqīyah",
+    "city": "Hihya",
+    "lat": 30.6687,
+    "lon": 31.5904
+  },
+  {
+    "province": "Al Minūfīyah",
+    "city": "Al Bajur",
+    "lat": 30.4333,
+    "lon": 31.0569
+  },
+  {
+    "province": "Shamāl Sīnā’",
+    "city": "Ash Shaykh Zuwayd",
+    "lat": 31.2119,
+    "lon": 34.1106
+  },
+  {
+    "province": "Al Minyā",
+    "city": "Dalja",
+    "lat": 27.65,
+    "lon": 30.7
+  },
+  {
+    "province": "Al Buḩayrah",
+    "city": "Abu Hummus",
+    "lat": 31.1006,
+    "lon": 30.3128
+  },
+  {
+    "province": "Al Minyā",
+    "city": "Abu Qurqas",
+    "lat": 27.9308,
+    "lon": 30.8364
+  },
+  {
+    "province": "Maţrūḩ",
+    "city": "Sidi Barani",
+    "lat": 31.6108,
+    "lon": 25.9256
+  },
+  {
+    "province": "Qinā",
+    "city": "Naj` Hammadi",
+    "lat": 26.05,
+    "lon": 32.25
+  },
+  {
+    "province": "Banī Suwayf",
+    "city": "Al Fashn",
+    "lat": 28.8222,
+    "lon": 30.8983
+  },
+  {
+    "province": "Al Jīzah",
+    "city": "As Saff",
+    "lat": 29.5647,
+    "lon": 31.2811
+  },
+  {
+    "province": "Banī Suwayf",
+    "city": "Biba",
+    "lat": 28.9218,
+    "lon": 30.9844
+  },
+  {
+    "province": "Al Qalyūbīyah",
+    "city": "Abu Za`bal",
+    "lat": 30.2494,
+    "lon": 31.3544
+  },
+  {
+    "province": "Al Baḩr al Aḩmar",
+    "city": "Safaja",
+    "lat": 26.7517,
+    "lon": 33.9344
+  },
+  {
+    "province": "Ad Daqahlīyah",
+    "city": "Shirbin",
+    "lat": 31.1922,
+    "lon": 31.5239
+  },
+  {
+    "province": "Qinā",
+    "city": "Dandarah",
+    "lat": 26.1422,
+    "lon": 32.6697
+  },
+  {
+    "province": "Ad Daqahlīyah",
+    "city": "Aja",
+    "lat": 30.9416,
+    "lon": 31.2904
+  },
+  {
+    "province": "Al Minūfīyah",
+    "city": "Birkat as Sab`",
+    "lat": 30.6338,
+    "lon": 31.0848
+  },
+  {
+    "province": "Sūhāj",
+    "city": "Al Balyana",
+    "lat": 26.2329,
+    "lon": 31.9993
+  },
+  {
+    "province": "Al Minyā",
+    "city": "Matay",
+    "lat": 28.4189,
+    "lon": 30.7792
+  },
+  {
+    "province": "Al Buḩayrah",
+    "city": "Ar Rahmaniyah",
+    "lat": 31.1033,
+    "lon": 30.6417
+  },
+  {
+    "province": "Ad Daqahlīyah",
+    "city": "Kafr al Kurdi",
+    "lat": 31.1429,
+    "lon": 31.7826
+  },
+  {
+    "province": "Dumyāţ",
+    "city": "Kafr al Battikh",
+    "lat": 31.404,
+    "lon": 31.7378
+  },
+  {
+    "province": "Al Qalyūbīyah",
+    "city": "Tukh",
+    "lat": 30.3539,
+    "lon": 31.2007
+  },
+  {
+    "province": "Ash Sharqīyah",
+    "city": "San al Hajar al Qibliyah",
+    "lat": 30.9769,
+    "lon": 31.88
+  },
+  {
+    "province": "Asyūţ",
+    "city": "Al Badari",
+    "lat": 26.9925,
+    "lon": 31.4156
+  },
+  {
+    "province": "Al Minyā",
+    "city": "Dayr Mawas",
+    "lat": 27.6414,
+    "lon": 30.8494
+  },
+  {
+    "province": "Banī Suwayf",
+    "city": "Ihnasya al Madinah",
+    "lat": 29.0833,
+    "lon": 30.9333
+  },
+  {
+    "province": "Ad Daqahlīyah",
+    "city": "Nabaruh",
+    "lat": 31.0944,
+    "lon": 31.3
+  },
+  {
+    "province": "Aswān",
+    "city": "Daraw",
+    "lat": 24.4003,
+    "lon": 32.9306
+  },
+  {
+    "province": "Sūhāj",
+    "city": "Al Maraghah",
+    "lat": 26.7,
+    "lon": 31.6
+  },
+  {
+    "province": "Dumyāţ",
+    "city": "Faraskur",
+    "lat": 31.3297,
+    "lon": 31.7147
+  },
+  {
+    "province": "Al Jīzah",
+    "city": "Al `Ayyat",
+    "lat": 29.6197,
+    "lon": 31.2575
+  },
+  {
+    "province": "Al Ismā‘īlīyah",
+    "city": "Abu Suwayr",
+    "lat": 30.5633,
+    "lon": 32.1155
+  },
+  {
+    "province": "Al Qāhirah",
+    "city": "Badr",
+    "lat": 30.136,
+    "lon": 31.715
+  },
+  {
+    "province": "Al Ismā‘īlīyah",
+    "city": "Al Qantarah",
+    "lat": 30.85,
+    "lon": 32.31
+  },
+  {
+    "province": "Al Minūfīyah",
+    "city": "Shanawan",
+    "lat": 30.5031,
+    "lon": 31.0058
+  },
+  {
+    "province": "Kafr ash Shaykh",
+    "city": "Shabas ash Shuhada'",
+    "lat": 31.0896,
+    "lon": 30.749
+  },
+  {
+    "province": "Asyūţ",
+    "city": "As Sahil",
+    "lat": 27.0642,
+    "lon": 31.3442
+  },
+  {
+    "province": "Ad Daqahlīyah",
+    "city": "Mahallat Damanah",
+    "lat": 31.0754,
+    "lon": 31.4959
+  },
+  {
+    "province": "Ad Daqahlīyah",
+    "city": "Mit Salsil",
+    "lat": 31.1667,
+    "lon": 31.8
+  },
+  {
+    "province": "Shamāl Sīnā’",
+    "city": "Rafah",
+    "lat": 31.2,
+    "lon": 34.2333
+  },
+  {
+    "province": "Ash Sharqīyah",
+    "city": "Al Husayniyah",
+    "lat": 30.8617,
+    "lon": 31.9181
+  },
+  {
+    "province": "Ash Sharqīyah",
+    "city": "Kafr Saqr",
+    "lat": 30.7964,
+    "lon": 31.6261
+  },
+  {
+    "province": "Ad Daqahlīyah",
+    "city": "Bani `Ubayd",
+    "lat": 31.0234,
+    "lon": 31.6479
+  },
+  {
+    "province": "Al Buḩayrah",
+    "city": "Shubrakhit",
+    "lat": 31.0275,
+    "lon": 30.7128
+  },
+  {
+    "province": "Banī Suwayf",
+    "city": "Qiman al `Arus",
+    "lat": 29.3005,
+    "lon": 31.1683
+  },
+  {
+    "province": "Dumyāţ",
+    "city": "As Sarw",
+    "lat": 31.2387,
+    "lon": 31.6538
+  },
+  {
+    "province": "Qinā",
+    "city": "Al Waqf",
+    "lat": 26.0808,
+    "lon": 32.4245
+  },
+  {
+    "province": "Al Minyā",
+    "city": "Al `Idwah",
+    "lat": 28.7,
+    "lon": 30.75
+  },
+  {
+    "province": "Al Qalyūbīyah",
+    "city": "Qaha",
+    "lat": 30.2833,
+    "lon": 31.2
+  },
+  {
+    "province": "Al Uqşur",
+    "city": "Al Karnak",
+    "lat": 25.7184,
+    "lon": 32.6581
+  },
+  {
+    "province": "Al Fayyūm",
+    "city": "An Nazlah",
+    "lat": 29.3063,
+    "lon": 30.6513
+  },
+  {
+    "province": "Ash Sharqīyah",
+    "city": "Al Qassasin",
+    "lat": 30.5667,
+    "lon": 31.9333
+  },
+  {
+    "province": "Al Gharbīyah",
+    "city": "Qutur",
+    "lat": 30.9765,
+    "lon": 30.9532
+  },
+  {
+    "province": "Ash Sharqīyah",
+    "city": "Hirriyat Raznah",
+    "lat": 30.6028,
+    "lon": 31.5372
+  },
+  {
+    "province": "Al Baḩr al Aḩmar",
+    "city": "Al Qusayr",
+    "lat": 26.1091,
+    "lon": 34.276
+  },
+  {
+    "province": "Al Qalyūbīyah",
+    "city": "Kafr Shukr",
+    "lat": 30.547,
+    "lon": 31.2673
+  },
+  {
+    "province": "Maţrūḩ",
+    "city": "Siwah",
+    "lat": 29.2012,
+    "lon": 25.5196
+  },
+  {
+    "province": "Dumyāţ",
+    "city": "Kafr Sa`d",
+    "lat": 31.3557,
+    "lon": 31.6848
+  },
+  {
+    "province": "Al Minyā",
+    "city": "Sharunah",
+    "lat": 28.594,
+    "lon": 30.8516
+  },
+  {
+    "province": "Al Gharbīyah",
+    "city": "Abu Sir Bana",
+    "lat": 30.9128,
+    "lon": 31.2428
+  },
+  {
+    "province": "Qinā",
+    "city": "Naqadah",
+    "lat": 25.9017,
+    "lon": 32.7242
+  },
+  {
+    "province": "Al Qalyūbīyah",
+    "city": "Mit Nama",
+    "lat": 30.1453,
+    "lon": 31.2343
+  },
+  {
+    "province": "Al Minyā",
+    "city": "Al Qays",
+    "lat": 28.4833,
+    "lon": 30.7833
+  },
+  {
+    "province": "Al Gharbīyah",
+    "city": "Sunbat",
+    "lat": 30.8057,
+    "lon": 31.207
+  },
+  {
+    "province": "Al Gharbīyah",
+    "city": "Sa al Hajar",
+    "lat": 30.9647,
+    "lon": 30.7683
+  },
+  {
+    "province": "Qinā",
+    "city": "Jarajus",
+    "lat": 25.8681,
+    "lon": 32.7566
+  },
+  {
+    "province": "Maţrūḩ",
+    "city": "Al Hammam",
+    "lat": 30.8419,
+    "lon": 29.394
+  },
+  {
+    "province": "Asyūţ",
+    "city": "Bani Murr",
+    "lat": 27.2272,
+    "lon": 31.1944
+  },
+  {
+    "province": "Al Minūfīyah",
+    "city": "Zawiyat Razin",
+    "lat": 30.4122,
+    "lon": 30.8536
+  },
+  {
+    "province": "Al Minyā",
+    "city": "Dayr Abu Hinnis",
+    "lat": 27.7864,
+    "lon": 30.905
+  },
+  {
+    "province": "Qinā",
+    "city": "Abu Tisht",
+    "lat": 26.0981,
+    "lon": 32.0936
+  },
+  {
+    "province": "Al Minyā",
+    "city": "Qasr Hawr",
+    "lat": 27.857,
+    "lon": 30.7282
+  },
+  {
+    "province": "Al Minyā",
+    "city": "Bani Hasan ash Shuruq",
+    "lat": 27.9314,
+    "lon": 30.8753
+  },
+  {
+    "province": "Al Fayyūm",
+    "city": "Biyahmu",
+    "lat": 29.3675,
+    "lon": 30.8528
+  },
+  {
+    "province": "Al Minyā",
+    "city": "Al Bayahu",
+    "lat": 28.2614,
+    "lon": 30.7317
+  },
+  {
+    "province": "Banī Suwayf",
+    "city": "Al Hibah",
+    "lat": 28.8,
+    "lon": 30.9167
+  },
+  {
+    "province": "Al Jīzah",
+    "city": "Al Bawiti",
+    "lat": 28.35,
+    "lon": 28.8667
+  },
+  {
+    "province": "Al Minyā",
+    "city": "Al Bahnasa",
+    "lat": 28.5353,
+    "lon": 30.6606
+  },
+  {
+    "province": "Shamāl Sīnā’",
+    "city": "Bi'r al `Abd",
+    "lat": 31.0,
+    "lon": 33.0167
+  },
+  {
+    "province": "Qinā",
+    "city": "Al Madamud",
+    "lat": 25.7344,
+    "lon": 32.7119
+  },
+  {
+    "province": "Kafr ash Shaykh",
+    "city": "Sakha",
+    "lat": 31.0881,
+    "lon": 30.9456
+  },
+  {
+    "province": "Al Minyā",
+    "city": "Dayr al Barsha",
+    "lat": 27.7572,
+    "lon": 30.91
+  },
+  {
+    "province": "Maţrūḩ",
+    "city": "Ad Dab`ah",
+    "lat": 31.0276,
+    "lon": 28.446
+  },
+  {
+    "province": "Al Jīzah",
+    "city": "Birqash",
+    "lat": 30.1692,
+    "lon": 31.0417
+  },
+  {
+    "province": "Ash Sharqīyah",
+    "city": "Qantir",
+    "lat": 30.8032,
+    "lon": 31.8379
+  },
+  {
+    "province": "Banī Suwayf",
+    "city": "Sidmant al Jabal",
+    "lat": 29.0856,
+    "lon": 30.9344
+  },
+  {
+    "province": "Al Minūfīyah",
+    "city": "Dinshaway",
+    "lat": 30.6,
+    "lon": 30.8167
+  },
+  {
+    "province": "Janūb Sīnā’",
+    "city": "At Tur",
+    "lat": 28.2333,
+    "lon": 33.6167
+  },
+  {
+    "province": "Maţrūḩ",
+    "city": "Burj al `Arab",
+    "lat": 30.9167,
+    "lon": 29.5333
+  },
+  {
+    "province": "Maţrūḩ",
+    "city": "Al `Alamayn",
+    "lat": 30.8333,
+    "lon": 28.95
+  },
+  {
+    "province": "Banī Suwayf",
+    "city": "Dishashah",
+    "lat": 28.9831,
+    "lon": 30.8492
+  },
+  {
+    "province": "Ad Daqahlīyah",
+    "city": "Mit Damsis",
+    "lat": 30.8267,
+    "lon": 31.2226
+  },
+  {
+    "province": "Qinā",
+    "city": "Al Qal`ah",
+    "lat": 26.0051,
+    "lon": 32.8178
+  },
+  {
+    "province": "Shamāl Sīnā’",
+    "city": "Qal`at an Nakhl",
+    "lat": 29.9,
+    "lon": 33.75
+  },
+  {
+    "province": "Al Minyā",
+    "city": "Sawadah",
+    "lat": 28.0775,
+    "lon": 30.7953
+  },
+  {
+    "province": "Al Wādī al Jadīd",
+    "city": "Qasr al Farafirah",
+    "lat": 27.0611,
+    "lon": 27.9556
+  },
+  {
+    "province": "Al Fayyūm",
+    "city": "Abjij",
+    "lat": 29.2861,
+    "lon": 30.8152
+  },
+  {
+    "province": "Al Minyā",
+    "city": "Qufadah",
+    "lat": 28.5812,
+    "lon": 30.7554
+  },
+  {
+    "province": "Qinā",
+    "city": "Shanhur",
+    "lat": 25.8604,
+    "lon": 32.7779
+  },
+  {
+    "province": "Al Jīzah",
+    "city": "Mandishah",
+    "lat": 28.3515,
+    "lon": 28.9317
+  },
+  {
+    "province": "Asyūţ",
+    "city": "Al Hammamiyah",
+    "lat": 26.9308,
+    "lon": 31.4877
+  },
+  {
+    "province": "Al Minyā",
+    "city": "Dayr as Sanquriyah",
+    "lat": 28.4868,
+    "lon": 30.6648
+  },
+  {
+    "province": "Al Gharbīyah",
+    "city": "Najrij",
+    "lat": 30.9724,
+    "lon": 30.8671
+  },
+  {
+    "province": "Dumyāţ",
+    "city": "Ras el-Barr",
+    "lat": 31.525,
+    "lon": 31.8406
+  },
+  {
+    "province": "Maţrūḩ",
+    "city": "As Sallum",
+    "lat": 31.55,
+    "lon": 25.16
+  },
+  {
+    "province": "Al Wādī al Jadīd",
+    "city": "Al Qasr",
+    "lat": 25.6959,
+    "lon": 28.8837
+  },
+  {
+    "province": "Al Baḩr al Aḩmar",
+    "city": "Barnis",
+    "lat": 23.9456,
+    "lon": 35.4842
+  },
+  {
+    "province": "Al Wādī al Jadīd",
+    "city": "Al Kharjah",
+    "lat": 25.451,
+    "lon": 30.5465
+  },
+  {
+    "province": "Al Iskandarīyah",
+    "city": "Al `Ajami",
+    "lat": 31.1163,
+    "lon": 29.7968
+  }
+]

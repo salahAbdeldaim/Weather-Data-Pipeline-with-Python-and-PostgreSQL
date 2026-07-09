@@ -1,0 +1,105 @@
+{
+  "name": "depi",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 6
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        0,
+        0
+      ],
+      "id": "dcfc1788-14dc-41d8-a544-34024f240da2",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "command": "=cd /root/depi_project/api && python3 main.py"
+      },
+      "type": "n8n-nodes-base.ssh",
+      "typeVersion": 1,
+      "position": [
+        208,
+        0
+      ],
+      "id": "8c849b6a-20af-46b7-b4bc-21ca9a56252f",
+      "name": "Execute a command",
+      "credentials": {
+        "sshPassword": {
+          "id": "iBPrlYugefYJNwx3",
+          "name": "SSH Password account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "5997188013",
+        "text": "=✅ Weather ETL Pipeline Executed Successfully!\n🌍 Extracted & Loaded 260 Egyptian cities into PostgreSQL.\n⏰ Execution Time: {{ $now.format('yyyy-MM-dd HH:mm:ss') }}\n",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        416,
+        0
+      ],
+      "id": "0888e625-7cbe-4edb-9fe9-02e8301b83af",
+      "name": "Send a text message",
+      "webhookId": "a482bbff-0c8a-4adc-9443-92df06007f07",
+      "credentials": {
+        "telegramApi": {
+          "id": "QEBRts1mz4t6Cqqq",
+          "name": "Telegram account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Execute a command",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute a command": {
+      "main": [
+        [
+          {
+            "node": "Send a text message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "bd74b726-6cdd-4fdc-94ed-dc7709660c4b",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "65eb8ef463344ae73a5bda63009036942dc060d473a8d1d2330885bca44a8c4a"
+  },
+  "nodeGroups": [],
+  "id": "iMXudyYY3IoPCrMK",
+  "tags": []
+}
