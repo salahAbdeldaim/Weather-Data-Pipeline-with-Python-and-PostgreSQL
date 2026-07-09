@@ -544,16 +544,6 @@
                 changeSlide(-1);
             }
         });
-
-        // Floating Glowing Cloud Cursor Follower
-        const floatingCloud = document.createElement('div');
-        floatingCloud.innerHTML = '☁️';
-        floatingCloud.style.cssText = 'position:fixed; pointer-events:none; z-index:999999; font-size:26px; filter:drop-shadow(0 0 10px rgba(96, 165, 250, 0.9)); transition:transform 0.05s ease-out; top:0; left:0; transform:translate(-100px, -100px);';
-        document.body.appendChild(floatingCloud);
-
-        document.addEventListener('mousemove', (e) => {
-            floatingCloud.style.transform = `translate(${e.clientX + 14}px, ${e.clientY + 14}px)`;
-        });
     </script>
 
 </body>
