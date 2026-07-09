@@ -25,6 +25,11 @@
             padding: 0;
             font-family: 'Outfit', sans-serif;
             user-select: none;
+            cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath fill='%2360a5fa' stroke='%23ffffff' stroke-width='2' d='M25 18a5 5 0 0 0-4.8-3.6 7 7 0 0 0-13.6 1.4A5 5 0 0 0 5 25h20a5 5 0 0 0 0-10z'/%3E%3C/svg%3E") 16 16, auto !important;
+        }
+
+        button, a, .nav-btn, iframe {
+            cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36'%3E%3Cpath fill='%23f59e0b' stroke='%23ffffff' stroke-width='2' d='M26 19a5 5 0 0 0-4.8-3.6 7 7 0 0 0-13.6 1.4A5 5 0 0 0 6 26h20a5 5 0 0 0 0-10z'/%3E%3Ccircle cx='28' cy='10' r='5' fill='%23fbbf24' stroke='%23fff' stroke-width='1.5'/%3E%3C/svg%3E") 18 18, pointer !important;
         }
 
         body {
@@ -538,6 +543,16 @@
             } else if (event.key === 'ArrowLeft' || event.key === 'PageUp') {
                 changeSlide(-1);
             }
+        });
+
+        // Floating Glowing Cloud Cursor Follower
+        const floatingCloud = document.createElement('div');
+        floatingCloud.innerHTML = '☁️';
+        floatingCloud.style.cssText = 'position:fixed; pointer-events:none; z-index:999999; font-size:26px; filter:drop-shadow(0 0 10px rgba(96, 165, 250, 0.9)); transition:transform 0.05s ease-out; top:0; left:0; transform:translate(-100px, -100px);';
+        document.body.appendChild(floatingCloud);
+
+        document.addEventListener('mousemove', (e) => {
+            floatingCloud.style.transform = `translate(${e.clientX + 14}px, ${e.clientY + 14}px)`;
         });
     </script>
 
