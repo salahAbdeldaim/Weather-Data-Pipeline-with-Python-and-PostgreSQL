@@ -38,7 +38,8 @@
           "id": "iBPrlYugefYJNwx3",
           "name": "SSH Password account"
         }
-      }
+      },
+      "onError": "continueErrorOutput"
     },
     {
       "parameters": {
@@ -49,11 +50,33 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        416,
-        0
+        448,
+        -112
       ],
       "id": "0888e625-7cbe-4edb-9fe9-02e8301b83af",
       "name": "Send a text message",
+      "webhookId": "a482bbff-0c8a-4adc-9443-92df06007f07",
+      "credentials": {
+        "telegramApi": {
+          "id": "QEBRts1mz4t6Cqqq",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "5997188013",
+        "text": "=⚠️ Weather ETL Pipeline Failed!\n⏰ Execution Time: {{ $now.format('yyyy-MM-dd HH:mm:ss') }}\n",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        448,
+        96
+      ],
+      "id": "3ad15dcf-2ead-45f1-a72e-acf410a8aea7",
+      "name": "Send a text message1",
       "webhookId": "a482bbff-0c8a-4adc-9443-92df06007f07",
       "credentials": {
         "telegramApi": {
@@ -84,6 +107,13 @@
             "type": "main",
             "index": 0
           }
+        ],
+        [
+          {
+            "node": "Send a text message1",
+            "type": "main",
+            "index": 0
+          }
         ]
       ]
     }
@@ -94,7 +124,7 @@
     "binaryMode": "separate",
     "availableInMCP": false
   },
-  "versionId": "bd74b726-6cdd-4fdc-94ed-dc7709660c4b",
+  "versionId": "29beb967-bedc-4636-a3f8-ddcdc5ceb90c",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "65eb8ef463344ae73a5bda63009036942dc060d473a8d1d2330885bca44a8c4a"
